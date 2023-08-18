@@ -1,0 +1,274 @@
+@charset "utf-8";
+body {
+  font-family: "맑은 고딕", Arial, Helvetica;
+  font-size: 13px;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #2D2D2D;
+}
+legend, .fa-bars, fieldset label span{display: none;}
+header {
+  height:108px;
+  background-color:rgba(0,0,0,.6);
+  position: absolute;
+  z-index: 9999;
+}
+header h1 {
+  width:145px;
+}
+header h1 img {
+  width:100%;
+  padding-top: 20px;
+}
+.h_inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.gnb {
+  width: 680px;
+}
+.gnb > ul {
+  display: flex;
+  justify-content: space-around;
+}
+.gnb > ul > li {
+  position: relative;
+  padding: 0 15px;
+}
+.gnb > ul > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.sub {
+  transform: translateX(-18px);
+  display: none;
+}
+.gnb > ul >li > .sub > li >a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+}
+.gnb:hover .sub {display: block;}
+
+/* 메인컨텐츠 2번째 */
+.con2 {
+  width: 100%;
+  background-color: rgba(231, 149, 1, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.con2_left {
+width: 360px;
+text-align: center;
+}
+.con2_left > h2 {
+  color: #B40204;
+  font-size: 24px;
+  margin: 30px;
+  font-weight: bold;
+}
+.con2_left > a > img {
+  width: 320px;
+  height: 343px;
+  padding-bottom: 50px;
+}
+
+.con2 button {
+  font-size: 14px;
+  background: #FFE2C1;
+  border: none;
+  padding: 6px 15px;
+}
+.con2_right {
+  /* border: 1px solid #000; */
+  position: relative;
+}
+.con2_right > h2 {
+  color: #B40204;
+  font-size: 24px;
+  margin: 30px;
+  font-weight: bold;
+}
+.con2_right img {
+  width: 250px;
+}
+.con2_right > ul {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+.con2_right > ul > li{
+  width: 300px;
+}
+.con2_right > ul > li > a > p {
+  color: #B40204;
+  font-size: 15px;
+}
+.con2_right > i.fas{
+  position: absolute;
+  top: 220px;
+  top: 220px;
+  font-size: 40px;
+}
+.fa-angle-right {
+  right: 0;
+}
+.fa-angle-left {
+  left:0;
+}
+
+/* 메인컨텐츠 3번째 */
+.con3 {
+  background: url(../images/bg.jpg) no-repeat ;
+  height: 814px;
+  background-size: cover;
+}
+.con3 > div{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.con3 > div > h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #EB920D;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.con3_img {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.con3 > div > button {
+  font-size: 14px;
+  background: #FFE2C1;
+  border: none;
+  padding: 6px 15px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+/* 메인컨텐츠 4번째 */
+.con4{
+  width: 1200px;
+  margin: 60px auto;
+}
+.con4 > h2 {
+  padding: 60px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.con4 > h2::after{
+  display: block;
+  content: "";
+  background: #ccc;
+  height: 1px;
+  position: relative;
+  top: -10px;
+}
+.con4 > h2 > span {
+  background: #fff;
+  padding: 0px 6px;
+  position: relative;
+  z-index: 5;
+}
+.news ul{
+  display: flex;
+  justify-content:space-around;
+}
+.news ul li > div > a > img {
+  width: 300px;
+  height: 300px;
+}
+.news ul li > div{
+  border: 2px solid #B40204;
+  padding: 20px 20px;
+}
+.news ul li > p {
+  color: #B40204;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* 메인컨텐츠 5번째 */
+.con5 {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto 60px auto;
+}
+.con5_right {
+  width: 50%;
+  position: relative;
+}
+.con5_right > a {
+  font-size: 14px;
+  background: #FFE2C1;
+  border: none;
+  padding: 6px 30px;
+  position: absolute;
+  top: 320px;
+  left: 80px;
+}
+.con5_right > p {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 170px;
+  left: 60px;
+}
+.con5_left {
+  display: block;
+  width: 50%;
+  height: 411px;
+  background: #EC7E04;
+  padding: 0px 40px;
+}
+.con5_left > dl{
+  display:flex;
+  padding: 20px;
+}
+.con5_left > iframe {
+  display: block;
+  height: 260px;
+}
+.con5_right > img{
+  width: 100%;
+  height: 411px;
+}
+footer{
+  background:#656565;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 50px;padding-bottom:30px ;
+}
+.f_inner {
+  width: 1200px;
+  margin: 0px auto;
+}
+footer img {
+  width: 132px;
+  height: 53px;
+  padding-right: 50px;
+  float: left;
+}
+address {
+  color:#fff;
+  font-style:normal;
+  line-height:160%;
+}
