@@ -272,3 +272,12 @@ address {
   font-style:normal;
   line-height:160%;
 }
+
+.top_btn{
+  position: fixed;
+  right: 100px;
+  bottom:150px;
+  z-index: 100;
+  display: none;
+}
+.top_btn > img {width: 50px;}

@@ -169,7 +169,7 @@
       </div>
     </div>
 
-    <a href="#" title="위로 바로가기"><img src="./images/top.png" alt="top"></a>
+    <a href="#" title="위로 바로가기" class="top_btn"><img src="./images/top.png" alt="top"></a>
     
   </main>
 
@@ -203,7 +203,22 @@
         },
       });
   </script> -->
-  
+
+    <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        let spos = $(this).scrollTop();
+        console.log(spos);
+        if(spos>=1000){
+          $('.top_btn').fadeIn();
+        }else{
+          $('.top_btn').fadeOut();
+        };
+      });
+    });
+  </script>
 
 </body>
 </html>

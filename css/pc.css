@@ -65,8 +65,5 @@
     transform:translate(-36px, 3px);
     color: #F43B00;
   }
-  main > a > img {
-    width: 60px;
-    height: 60px;
-    float: right;padding: 0px 20px;
-  }
+
+}
